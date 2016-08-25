@@ -1,0 +1,11 @@
+
+body{
+  position: relative;
+}
+
+img{
+  width:100%;
+}
+.project-description{
+  margin: 10px 0px;
+}
