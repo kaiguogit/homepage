@@ -6,6 +6,18 @@ body{
 img{
   width:100%;
 }
+a:focus{
+  outline: 0px auto -webkit-focus-ring-color;
+}
+#projects .panel:hover{
+  border-color: #51a7e8;
+  box-shadow: 0 0 5px rgba(81,167,232,0.5);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: border-color 0.15s ease 0s, 
+    transform 0.15s ease 0s, box-shadow 0.15s ease 0s,
+    color 0.15s ease 0s;
+}
 .project-description{
   margin: 10px 0px;
 }
