@@ -9,7 +9,7 @@ img{
 a:focus{
   outline: 0px auto -webkit-focus-ring-color;
 }
-#projects .panel:hover{
+#projects .panel:hover, #blog .panel:hover{
   border-color: #51a7e8;
   box-shadow: 0 0 5px rgba(81,167,232,0.5);
   -webkit-transform: scale(1.01);
