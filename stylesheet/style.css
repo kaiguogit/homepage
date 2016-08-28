@@ -72,3 +72,60 @@ a:focus{
   -o-animation: rotating 5s linear infinite;
   animation: rotating 5s linear infinite;
   }
+
+#exercises tr, #projects .project
+{
+  -webkit-transform: perspective(350px) rotateX(-90deg);
+  transform: perspective(350px) rotateX(-90deg);
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+    animation: flipdown 0.7s;
+    animation-fill-mode: forwards;
+    -webkit-animation: flipdown 0.7s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#exercises tr.flippedup, #projects .project.flippedup
+{
+    animation: flipup 0.7s;
+    animation-fill-mode: forwards;
+    -webkit-animation: flipup 0.7s;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes flipdown
+{
+  0% { transform: perspective(350px) rotateX(-90deg); }
+  33% { transform: perspective(350px) rotateX(0deg); }
+  66% { transform: perspective(350px) rotateX(10deg); }
+  100% { transform: perspective(350px) rotateX(0deg); }
+}
+
+@-webkit-keyframes flipdown
+{
+  0% { -webkit-transform: perspective(350px) rotateX(-90deg); }
+  33% { -webkit-transform: perspective(350px) rotateX(0deg); }
+  66% { -webkit-transform: perspective(350px) rotateX(10deg); }
+  100% { -webkit-transform: perspective(350px) rotateX(0deg); }
+}
+
+@keyframes flipup
+{
+  0% { transform: perspective(350px) rotateX(0deg); }
+  33% { transform: perspective(350px) rotateX(10deg); }
+  66% { transform: perspective(350px) rotateX(0deg); }
+  100% { transform: perspective(350px) rotateX(-90deg); 
+        display: none;
+      }
+}
+
+@-webkit-keyframes flipup
+{
+  0% { -webkit-transform: perspective(350px) rotateX(0deg); }
+  33% { -webkit-transform: perspective(350px) rotateX(10deg); }
+  66% { -webkit-transform: perspective(350px) rotateX(0deg); }
+  100% { -webkit-transform: perspective(350px) rotateX(-90deg); 
+    display: none;
+  }
+}

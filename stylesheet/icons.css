@@ -1,0 +1,21 @@
+.rails{
+  color:#c00;
+}
+.ruby{
+  color:#930f17;
+}
+.postgres{
+  color:#008ebd;  
+}
+.icon-heroku{
+  background-color:#7d5da2;
+  color:#fff;
+}
+.heroku{
+  color:#7d5da2;
+}
+.icon-heroku::before{
+  position: relative;
+  left: 4px;
+  top: 2px;
+}
