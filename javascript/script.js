@@ -43,4 +43,18 @@ $(function(){
       }
     });
   });
+
+  //Wakeup heroku apps
+  function wakeupHerokuApps(){
+    $('a[href*="kaiguo.ca"]').each(function(i,a){
+      $.ajax({
+        url: $(a).attr("href"), 
+        method: "get",
+        dataType: "json",
+        success: function(){
+        }
+      });
+    });
+  }
+  wakeupHerokuApps();
 });
