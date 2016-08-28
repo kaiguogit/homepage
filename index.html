@@ -46,12 +46,10 @@
   
   <div class="jumbotron" id="jumbotron">
     <div class="container text-center">
-     
       <!-- https://lipis.github.io/bootstrap-social/ -->
-   
       <div class="row" id="welcome">
         <div class="rotating"><h3>Welcome</h3></div><div>&nbsp;</div><div><h3> to my site. </h3></div>
-        <h4>I'm a developer/sysadmin. Love coding, piano, technologies that make life colorful.</h4>
+        <h4>I'm a sysadmin transitioning to developer. Love coding, piano, technologies that make life colorful.</h4>
       </div>
       <div class="row">
         <div class="col-md-offset-4 col-md-4">
@@ -71,31 +69,39 @@
         </div>
     </div>
   </div>
+  <div class="container description"> 
+    <h3>Summary</h3>
+    <p>I recently attended 2 months full time Lighthouse Labs web dev bootcamp.</p>
+    <p>Please take a look at projects and exercises I worked on.</p>
+  </div>
 
   <div class="container" id="projects">
     <section>
       <div class="page-header">
-        <h1>Projects <small>What project I work on to learn and for fun.</small></h1>
+        <h1>Projects</h1>
       </div>  
       <div class="row">
         <div class="col-md-6">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
-                <a href="http://pokemontradeapp.herokuapp.com">Pokexchange</a>
+                <a href="http://pokexchange.kaiguo.ca">Pokexchange</a>
               </h3>
             </div>
             <div class="panel-body">
               <div class="col-sm-4">
                 <a href="#" data-toggle="modal" data-target="#popup-pokexchange-img">
                   <img src="img/pokeball.png" alt="...">
-                  <span class="btn btn-social btn-block btn-success"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
+                  <span class="btn btn-social btn-block btn-instagram"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
                 </a>
-                <a href="https://github.com/kaiguogit/pokemontradeapp" class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>&nbsp; Source Code</a>
+                <a href="http://pokexchange.kaiguo.ca">
+                  <span class="btn btn-block btn-social btn-success"><span class="fa fa-globe"></span>Go There</span>
+                </a>                
+                <a href="https://github.com/kaiguogit/pokemontradeapp"><span class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>Source Code</span></a>
               </div>
-              <div class="col-sm-8">  
+              <div class="col-sm-8 description">  
                 <dl>
-                  <dd class="project-description">Pokexchange is a web app help people to manage and trade pokemon.</dd>
+                  <dd class="description project-description">Pokexchange is a web app help people to manage and trade pokemon. <br>It's built as a 5 days midterm project in Lighthouse labs</dd>
                   <dt>Technologies</dt>
                   <dd>Ruby, HTML, CSS, JavaScript, AngularJS, BootStrap, Sinatra, and PostgreSQL.</dd>
                 </dl>
@@ -128,13 +134,13 @@
             </div>
             <div class="panel-body">
               <div class="col-sm-4">
-                <a href="" data-toggle="modal" data-target="#popup-battleship-img">
+                <a class="btn-block" href="" data-toggle="modal" data-target="#popup-battleship-img">
                   <img src="img/battleship.png" alt="...">
-                  <span class="btn btn-social btn-block btn-success"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
+                  <span class="btn btn-social btn-block btn-instagram"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
                 </a>
-                <a href="https://github.com/kaiguogit/battleshipgame" class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>&nbsp; Source Code</a>
+                <a href="https://github.com/kaiguogit/battleshipgame"><span class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>Source Code</span></a>
               </div>
-              <div class="col-sm-8">  
+              <div class="col-sm-8 description">  
                 <dl>
                   <dd class="project-description">This is a command line battleship game I built with a competetive AI. I'm in process of building a web gui for it.</dd>
                   <dt>Technologies</dt>
@@ -155,11 +161,64 @@
             </div>
           </div>
         </div>
-
       </div>
-    </section>
+    </section>  
   </div>
 
+  <div class="container description">
+    <div class="row">
+      <div class="page-header">
+        <h1>Exercises <small>Mini projects for practicing one or more techniques.</small></h1>
+      </div> 
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <a href="http://googlemap.kaiguo.ca">PhotoOnGoogleMap</a>
+            </td>
+            <td><a href="https://github.com/kaiguogit/googlemap-500px_api" class="btn btn-social-icon btn-sm btn-github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </td>
+            <td>
+              <strong>Description: </strong>Show photos from 500px based on location on Google Map
+              <br>
+              <strong>Technologies: </strong>Google Map API, 500px API, JS, Sinatra, Bootstrap
+            </td>
+          </tr> 
+          <tr>
+            <td>
+              <a href="http://weather.kaiguo.ca">WeatherForecast</a>
+            </td>
+            <td>
+              <a href="https://github.com/kaiguogit/weather_underground_api_app" class="btn btn-social-icon btn-sm btn-github">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </td>
+            <td>
+              <strong>Description: </strong>Autocomplete on city search, show current weather and forecast
+              <br>
+              <strong>Technologies: </strong> Weather Underground API, JS, Handlebar, Sinatra, Bootstrap
+            </td>
+          </tr>
+          <tr>
+            <td>Rotten Mangoes</td>
+            <td>
+              <a href="https://github.com/kaiguogit/rotten-mangoes" class="btn btn-social-icon btn-sm btn-github"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </td>
+            <td>
+              <strong>Description: </strong>Movie commentary CRUD. 
+              <br>
+              <strong>Technologies: </strong>Rails, Bootstrap
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        
+        
+        
+    </div>
+  </div>
   <div class="container" id="blog">
     <section>
       <div class="page-header">
@@ -180,7 +239,7 @@
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-wrench fa-stack-1x fa-inverse" aria-hidden="true"></i>
                   </span>
-                  <span class="btn btn-block btn-success">Go There</span>
+                  <span class="btn btn-social btn-block btn-success"><span class="fa fa-globe"></span>Go There</span>
                 </a>
               </div>
               <div class="col-sm-8">  
