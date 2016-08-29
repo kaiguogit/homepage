@@ -3,7 +3,7 @@ $(function(){
   //filter exercises 
   $("#exercises .filters").on("click", "a", function(){
     event.preventDefault();
-    var rows = $("#exercises tr");
+    var rows = $("#exercises tbody > tr");
     var filter = this.className;
     if(filter !== ""){
      filter = "." + filter; 
