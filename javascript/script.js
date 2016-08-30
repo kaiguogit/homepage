@@ -57,9 +57,7 @@ $(function(){
       $.ajax({
         url: $(a).attr("href"), 
         method: "get",
-        dataType: "jsonp",
-        success: function(){
-        }
+        dataType: "json"
       });
     });
   }
