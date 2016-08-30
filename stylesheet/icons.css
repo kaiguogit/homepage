@@ -1,17 +1,17 @@
-.rails{
+.rails, .rails:focus{
   color:#c00;
 }
-.ruby{
+.ruby, .ruby:focus{
   color:#930f17;
 }
-.postgres{
+.postgres, .postgres:focus{
   color:#008ebd;  
 }
-.icon-heroku{
+.icon-heroku, .icon-heroku:focus{
   background-color:#7d5da2;
   color:#fff;
 }
-.heroku{
+.heroku, .heroku:focus{
   color:#7d5da2;
 }
 .icon-heroku::before{
@@ -19,6 +19,6 @@
   left: 4px;
   top: 2px;
 }
-.javascript{
+.javascript, .javascript:focus{
   color:#21abc7;
 }

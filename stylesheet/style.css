@@ -7,7 +7,7 @@ body{
   margin-bottom: 10px;
 }
 .page-header{
-  margin: 20px 0 20px;
+  margin: 10px 0 0px;
 }
 img{
   width:100%;
@@ -15,6 +15,7 @@ img{
 a:focus{
   outline: 0px auto -webkit-focus-ring-color;
 }
+
 #projects .panel:hover, #blog .panel:hover{
   border-color: #51a7e8;
   box-shadow: 0 0 5px rgba(81,167,232,0.5);
@@ -30,6 +31,42 @@ a:focus{
 .project-description{
   margin: 10px 0px;
 }
+
+.filter-bar{
+  padding: 10px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+ul.filter{
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+ul.filter li{
+  display: inline-block;
+  margin: 0px 5px;
+  
+}
+ul.filter li > a{
+  padding: 5px 5px 6px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+ul.filter li > a:hover{
+  border-bottom-color: #e5e5e5;
+}
+ul.filter > li > a.filter-selected{
+  border-bottom-color: #d26911;
+}
+
+#projects > section > div.filter-bar > ul > li:nth-child(1) > a{
+
+}
+
 #welcome div{
   display:inline-block;
 }
