@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="stylesheet/icons.css">
 
+  <!-- Font mfizz provides icons for languages-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.3.0/font-mfizz.min.css">
 
 </head>
@@ -49,6 +50,7 @@
 
   <!-- body -->
   
+  <!-- Jumbotron-->
   <div class="jumbotron" id="jumbotron">
     <div class="container text-center">
       <!-- https://lipis.github.io/bootstrap-social/ -->
@@ -74,12 +76,15 @@
         </div>
     </div>
   </div>
+
+  <!-- Description-->
   <div class="container description"> 
     <h3>Summary</h3>
     <p>I recently attended 2 months full time Lighthouse Labs web dev bootcamp.</p>
     <p>Please take a look at projects and exercises I worked on.</p>
   </div>
 
+  <!-- Projects -->
   <div class="container" id="projects">
     <section>
       <div class="page-header">
@@ -93,39 +98,47 @@
           <li><a href="" class="rails" data-filter="rails"><i class="icon-ruby-on-rails-alt"></i>Rails</a></li>
           <li><a href="" class="ruby" data-filter="ruby"><i class="icon-ruby"></i>Ruby</a></li>
           <li><a href="" class="heroku" data-filter="heroku"><i class="icon-heroku"></i>Heroku</a></li>
+          <li><a href="" class="nodejs" data-filter="nodejs"><i class="icon-nodejs"></i>NodeJS</a></li>
+          <li><a href="" class="React" data-filter="react">React</a></li>
+          <li><a href="" class="Express" data-filter="express">Express</a></li>
         </ul>
       </div>
+  
+    <!-- Verbal Alarm -->
       <div class="row">
-        <div class="project col-md-6">
+        <div class="project col-md-12">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
-                <a href="http://pokexchange.kaiguo.ca">Pokexchange</a>
+                <a href="http://pokexchange.kaiguo.ca">Verbal Alarm</a>
               </h3>
             </div>
             <div class="panel-body">
-              <div class="col-sm-4">
+              <div class="col-sm-2">
                 <a href="#" data-toggle="modal" data-target="#popup-pokexchange-img">
-                  <img src="img/pokeball.png" alt="...">
-                  <span class="btn btn-social btn-block btn-instagram"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
+                  <img src="img/gm2u2.jpg" alt="...">
                 </a>
-                <a href="http://pokexchange.kaiguo.ca">
+                <a href="http://gm.kaiguo.ca">
                   <span class="btn btn-block btn-social btn-success"><span class="fa fa-globe"></span>Go There</span>
-                </a>                
-                <a href="https://github.com/kaiguogit/pokemontradeapp"><span class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>Source Code</span></a>
+                </a>               
+                <a href="https://github.com/kaiguogit/GM2U2"><span class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>Source Code</span></a>
               </div>
               <div class="col-sm-8 description">  
                 <dl>
-                  <dd class="description project-description">Pokexchange is a web app help people to manage and trade pokemon. <br>It's built as a 5 days midterm project in Lighthouse labs</dd>
+                  <dd class="description project-description">Verbal Alarm utilizes IBM text-speech API to read information to you as alarm. It can call you via Twilio API. User can select and configure various widgets (weather, traffic, news, calendar, etc.) to build their alarm. Welcome to contribute and add more widgets. </dd>
                   <dt>Technologies</dt>
                   <dd>
-                    <span class="ruby"><i class="icon-ruby"></i>Ruby</span>, <span class="javascript"><i class="icon-javascript-alt"></i>Javascript</span>, <span class="postgres"><i class="icon-postgres"></i>PostgreSQL</span>, <span class="heroku"><i class="icon-heroku"></i>Heroku</span>,  <span class="rails"><i class="icon-ruby-on-rails-alt"></i>Rails</span>, HTML, CSS, AngularJS, BootStrap.</dd>
+                    <span class="nodejs"><i class="icon-nodejs"></i>NodeJS</span>, <span class="express">Express</span>,  <span class="react">React</span>, <span class="javascript"><i class="icon-javascript-alt"></i>Javascript</span>, <span class="postgres"><i class="icon-postgres"></i>PostgreSQL</span>, <span class="heroku"><i class="icon-heroku"></i>Heroku</span>, Material-UI, Materialize.</dd>
+                  <dt>APIs</dt>
+                  <dd>IBM text-to-speech, Twilio, Google Map, NewsAPI, WUnderground, Forismatic</dd>
                 </dl>
               </div>
             </div>
           </div>
         </div>
 
+
+       <!-- Modal  Verbal Alarm  -->
         <div class="modal fade" id="popup-pokexchange-img" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
           <div class="modal-dialog modal-md" role="document">
             <div class="modal-content text-center">
@@ -140,8 +153,61 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="project col-md-6">
+     <!-- Pokexchange -->
+      <div class="row">    
+         <div class="project col-md-12">
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">
+                 <a href="http://pokexchange.kaiguo.ca">Pokexchange</a>
+               </h3>
+             </div>
+             <div class="panel-body">
+               <div class="col-sm-2">
+                 <a href="#" data-toggle="modal" data-target="#popup-pokexchange-img">
+                   <img src="img/pokeball.png" alt="...">
+                   <span class="btn btn-social btn-block btn-instagram"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
+                 </a>
+                 <a href="http://pokexchange.kaiguo.ca">
+                   <span class="btn btn-block btn-social btn-success"><span class="fa fa-globe"></span>Go There</span>
+                 </a>                
+                 <a href="https://github.com/kaiguogit/pokemontradeapp"><span class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>Source Code</span></a>
+               </div>
+               <div class="col-sm-8 description">  
+                 <dl>
+                   <dd class="description project-description">Pokexchange is a web app help people to manage and trade pokemon. <br>It's built as a 5 days midterm project in Lighthouse labs</dd>
+                   <dt>Technologies</dt>
+                   <dd>
+                     <span class="ruby"><i class="icon-ruby"></i>Ruby</span>, <span class="javascript"><i class="icon-javascript-alt"></i>Javascript</span>, <span class="postgres"><i class="icon-postgres"></i>PostgreSQL</span>, <span class="heroku"><i class="icon-heroku"></i>Heroku</span>,  <span class="rails"><i class="icon-ruby-on-rails-alt"></i>Rails</span>, HTML, CSS, AngularJS, BootStrap.</dd>
+                 </dl>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+        <!-- Modal Pokexchange -->
+         <div class="modal fade" id="popup-pokexchange-img" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+           <div class="modal-dialog modal-md" role="document">
+             <div class="modal-content text-center">
+               <img src="img/pokexchange-screenshot1.png" alt="...">
+               <h4>Manage your pokemon</h4>
+               <img src="img/pokexchange-screenshot2.png" alt="...">
+               <h4>Find listings to trade</h4>
+               <a href="http://pokexchange.kaiguo.ca">
+                 <span class="btn btn-block btn-success">Go There</span>
+               </a>
+               <a href="https://github.com/kaiguogit/pokemontradeapp" class="btn btn-block btn-social btn-github"><span class="fa fa-github" aria-hidden="true"></span>&nbsp; Source Code</a>
+             </div>
+           </div>
+         </div>
+      </div>
+
+    <!-- BattleShip -->
+      <div class="row">    
+        <div class="project col-md-12">
           <div class="panel panel-default" id="battleshipgame">
             <div class="panel-heading">
               <h3 class="panel-title">
@@ -149,7 +215,7 @@
               </h3>
             </div>
             <div class="panel-body">
-              <div class="col-sm-4">
+              <div class="col-sm-2">
                 <a class="btn-block" href="" data-toggle="modal" data-target="#popup-battleship-img">
                   <img src="img/battleship.png" alt="...">
                   <span class="btn btn-social btn-block btn-instagram"><span class="fa fa-camera" aria-hidden="true"></span>Screenshots</span>
@@ -169,6 +235,7 @@
           </div>
         </div>
 
+        <!-- Modal battship -->
         <div class="modal fade" id="popup-battleship-img" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
           <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
@@ -183,6 +250,7 @@
     </section>  
   </div>
 
+  <!-- Exercises-->
   <div class="container" id="exercises">
     <section>
       <div class="page-header">
@@ -226,7 +294,7 @@
                   <span class="heroku"><i class="icon-heroku"></i>Heroku</span>
                   , Sinatra, Bootstrap,
               </td>
-            </tr> 
+            </tr>
             <tr>
               <td>
                 <a href="http://weather.kaiguo.ca">WeatherForecast</a>
@@ -316,6 +384,8 @@
     </section>
   </div>
 
+
+<!-- Contact Me! -->
   <div class="container" id="contact-me">
     <section>
       <div class="page-header">
